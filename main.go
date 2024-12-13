@@ -2,14 +2,20 @@ package main
 
 import "fmt"
 
-func main (){
-	var numero = 30.10
-	var nome = "Matheus"
+func main() {
+	var nome string
+	var idade int
+	var salario float32
 
-	fmt.Println("Código")
-	fmt.Printf("Numero %.2f", numero)
-	fmt.Println("Nome: ", nome)
+	fmt.Println("Entre com seu nome: ")
+	fmt.Scanln(&nome)
+	fmt.Println("Entre com sua idade: ")
+	fmt.Scanln(&idade)
+	fmt.Println("Entre com seu salario: ")
+	fmt.Scanln(&salario)
 
-
-	fmt.Printf("Olá %s bem vindo ao código em GO", nome)
+	fmt.Println("Seu nome é", nome)
+	fmt.Println("Sua idade é", idade)
+	fmt.Println("Seu salario é", salario)
+	
 }
