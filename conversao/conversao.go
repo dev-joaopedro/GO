@@ -24,11 +24,21 @@ func main(){
 	
 	valorInteiro,err := strconv.Atoi(valor2)
 
+	//nil = nulo, se tem algo dentro de erro ele entra no if pq é diferente de nulo 0
 	if err != nil {
 		fmt.Println("ERRO AO CONVERTER")
 	}else{
 		fmt.Println(valorInteiro)
 	}
 
-	fmt.Println(valorInteiro)
+	//String para float
+	var pi string = "3.14159"
+
+	piConvertido, error2 := strconv.ParseFloat(pi, 64)
+
+	if error2 != nil {
+		fmt.Println("ERRO AO CONVERTER PARA FLOAT")
+	}else{
+		fmt.Println(piConvertido)
+	}
 }
