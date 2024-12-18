@@ -2,9 +2,9 @@ package main
 
 import "fmt"
 
-func main(){
-	
-	// Arrays > 
+func main() {
+
+	// Arrays > Um array em Go é uma sequência de elementos de um único tipo, com um tamanho fixo definido na declaração.
 	var numeros [4]int
 
 	numeros[0] = 10
