@@ -3,24 +3,24 @@ package main
 import "fmt"
 
 type Pessoa struct {
-	Nome string
-	Idade int
-	Nacionalidade string
+	nome string
+	idade int
+	nacionalidade string
 }
 
 func main(){
 	
-	pessoa1 := Pessoa{Nome: "Matheus Fraga", Idade: 18, Nacionalidade: "Brasileiro"}
-	pessoa2 := Pessoa{Nome: "João", Idade: 30, Nacionalidade: "Brasileiro"}
+	pessoa1 := Pessoa{nome: "Matheus Fraga", idade: 18, nacionalidade: "Brasileiro"}
+	pessoa2 := Pessoa{nome: "João", idade: 30, nacionalidade: "Brasileiro"}
 
-	fmt.Println(pessoa1.Idade)
-	fmt.Println(pessoa2.Nome)
+	fmt.Println(pessoa1)
+	fmt.Println(pessoa2)
 
 	pessoas := map[int]Pessoa{
-		1:{Nome: "Johny", Idade: 24, Nacionalidade: "Americano"},
-		2:{Nome: "Ka", Idade: 21, Nacionalidade: "Brasileiro"},
+		1:{nome: "Johny", idade: 24, nacionalidade: "Americano"},
+		2:{nome: "Ka", idade: 21, nacionalidade: "Brasileiro"},
 	}
 
 	fmt.Println(pessoas)
-	
+
 }
