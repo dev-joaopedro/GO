@@ -23,6 +23,8 @@ func main(){
 	//tarefas = tarefas[:len(tarefas) - 1]
 	//fmt.Println("Removendo ultimo item:", tarefas)
 
-	tarefas = append(tarefas[:1], tarefas[2:]...)
-	fmt.Println("Remover o segundo item:", tarefas)
+	
+	//tarefas = append(tarefas[:1], tarefas[2:]...)
+	//fmt.Println("Remover o segundo item:", tarefas)
+
 }
