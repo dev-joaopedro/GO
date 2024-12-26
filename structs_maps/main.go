@@ -13,7 +13,7 @@ func main(){
 
 	usuarios := map[int]Usuario{
 		1:{Nome: "Johny", Idade: 24, status: true, permissao: "admin"},
-		2:{Nome: "Kamille", Idade: 21, status: false, permissao: "rainha"},
+		2:{Nome: "Kamille", Idade: 21, status: true, permissao: "rainha"},
 	}
 
 	usuarios[3] = Usuario{Nome: "Jose", Idade: 60, status: true, permissao: "admin"}
